@@ -1,0 +1,76 @@
+﻿@model IEnumerable<PeoductCRUD.Models.Cart>
+
+@{
+    ViewData["Title"] = "Cart";
+    var tong = 0.0;
+}
+
+<div class="container">
+    <h1>Cart</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ten)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.sl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.id_user)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.gia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.total)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr >
+                    <td>
+                        <img src="~/Data/img/@item.img" width="180" height="200">
+                    </td>
+                    <td style="vertical-align:inherit">
+                        <h3>@Html.DisplayFor(modelItem => item.ten)</h3>
+                        
+                    </td>
+                    <td style="vertical-align:inherit">
+
+                        <a asp-controller="Cart" asp-action="Tangsl" asp-route-id="@item.id" asp-route-sl="@item.sl" asp-route-name="@item.id_user" class="btn btn-primary">+</a>
+                        @Html.DisplayFor(modelItem => item.sl)
+                        <a asp-controller="Cart" asp-action="Giamsl" asp-route-id="@item.id" asp-route-sl="@item.sl" asp-route-name="@item.id_user" class="btn btn-primary">-</a>
+                    </td>
+                    <td style="vertical-align:inherit">
+                        @Html.DisplayFor(modelItem => item.id_user)
+                    </td>
+                    <td style="vertical-align:inherit">
+                        @Html.DisplayFor(modelItem => item.gia)
+                    </td>
+                    <td style="vertical-align:inherit">
+                        @Html.DisplayFor(modelItem => item.total)
+                    </td>
+                    <td style="vertical-align:inherit">
+                        <a asp-controller="Cart" asp-action="XoaCart" asp-route-id="@item.id" asp-route-name="@item.id_user" class="btn btn-danger">Delete</a>
+                    </td>
+
+                    @{
+                        tong = tong + item.total;
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+    <h2 style="text-align:right">$ @tong</h2>
+</div>

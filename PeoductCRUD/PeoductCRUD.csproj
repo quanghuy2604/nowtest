@@ -1,0 +1,144 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Data\img\1.jpg" />
+    <None Include="wwwroot\Data\img\10.jpg" />
+    <None Include="wwwroot\Data\img\100.jpg" />
+    <None Include="wwwroot\Data\img\11.jpg" />
+    <None Include="wwwroot\Data\img\12.jpg" />
+    <None Include="wwwroot\Data\img\13.jpg" />
+    <None Include="wwwroot\Data\img\14.jpg" />
+    <None Include="wwwroot\Data\img\15.jpg" />
+    <None Include="wwwroot\Data\img\16.jpg" />
+    <None Include="wwwroot\Data\img\17.jpg" />
+    <None Include="wwwroot\Data\img\18.jpg" />
+    <None Include="wwwroot\Data\img\19.jpg" />
+    <None Include="wwwroot\Data\img\2.jpg" />
+    <None Include="wwwroot\Data\img\20.jpg" />
+    <None Include="wwwroot\Data\img\21.jpg" />
+    <None Include="wwwroot\Data\img\22.jpg" />
+    <None Include="wwwroot\Data\img\23.jpg" />
+    <None Include="wwwroot\Data\img\24.jpg" />
+    <None Include="wwwroot\Data\img\25.jpg" />
+    <None Include="wwwroot\Data\img\26.jpg" />
+    <None Include="wwwroot\Data\img\27.jpg" />
+    <None Include="wwwroot\Data\img\28.jpg" />
+    <None Include="wwwroot\Data\img\29.jpg" />
+    <None Include="wwwroot\Data\img\3.jpg" />
+    <None Include="wwwroot\Data\img\30.jpg" />
+    <None Include="wwwroot\Data\img\31.jpg" />
+    <None Include="wwwroot\Data\img\32.jpg" />
+    <None Include="wwwroot\Data\img\33.jpg" />
+    <None Include="wwwroot\Data\img\34.jpg" />
+    <None Include="wwwroot\Data\img\35.jpg" />
+    <None Include="wwwroot\Data\img\36.jpg" />
+    <None Include="wwwroot\Data\img\37.jpg" />
+    <None Include="wwwroot\Data\img\38.jpg" />
+    <None Include="wwwroot\Data\img\39.jpg" />
+    <None Include="wwwroot\Data\img\4.jpg" />
+    <None Include="wwwroot\Data\img\40.jpg" />
+    <None Include="wwwroot\Data\img\41.jpg" />
+    <None Include="wwwroot\Data\img\42.jpg" />
+    <None Include="wwwroot\Data\img\43.jpg" />
+    <None Include="wwwroot\Data\img\45.jpg" />
+    <None Include="wwwroot\Data\img\46.jpg" />
+    <None Include="wwwroot\Data\img\47.jpg" />
+    <None Include="wwwroot\Data\img\48.jpg" />
+    <None Include="wwwroot\Data\img\49.jpg" />
+    <None Include="wwwroot\Data\img\5.jpg" />
+    <None Include="wwwroot\Data\img\50.jpg" />
+    <None Include="wwwroot\Data\img\51.jpg" />
+    <None Include="wwwroot\Data\img\52.jpg" />
+    <None Include="wwwroot\Data\img\53.jpg" />
+    <None Include="wwwroot\Data\img\54.jpg" />
+    <None Include="wwwroot\Data\img\55.jpg" />
+    <None Include="wwwroot\Data\img\56.jpg" />
+    <None Include="wwwroot\Data\img\57.jpg" />
+    <None Include="wwwroot\Data\img\58.jpg" />
+    <None Include="wwwroot\Data\img\59.jpg" />
+    <None Include="wwwroot\Data\img\6.jpg" />
+    <None Include="wwwroot\Data\img\60.jpg" />
+    <None Include="wwwroot\Data\img\61.jpg" />
+    <None Include="wwwroot\Data\img\62.jpg" />
+    <None Include="wwwroot\Data\img\63.jpg" />
+    <None Include="wwwroot\Data\img\64.jpg" />
+    <None Include="wwwroot\Data\img\65.jpg" />
+    <None Include="wwwroot\Data\img\66.jpg" />
+    <None Include="wwwroot\Data\img\67.jpg" />
+    <None Include="wwwroot\Data\img\68.jpg" />
+    <None Include="wwwroot\Data\img\69.jpg" />
+    <None Include="wwwroot\Data\img\7.jpg" />
+    <None Include="wwwroot\Data\img\70.jpg" />
+    <None Include="wwwroot\Data\img\71.jpg" />
+    <None Include="wwwroot\Data\img\72.jpg" />
+    <None Include="wwwroot\Data\img\73.jpg" />
+    <None Include="wwwroot\Data\img\74.jpg" />
+    <None Include="wwwroot\Data\img\75.jpg" />
+    <None Include="wwwroot\Data\img\76.jpg" />
+    <None Include="wwwroot\Data\img\77.jpg" />
+    <None Include="wwwroot\Data\img\78.jpg" />
+    <None Include="wwwroot\Data\img\79.jpg" />
+    <None Include="wwwroot\Data\img\8.jpg" />
+    <None Include="wwwroot\Data\img\80.jpg" />
+    <None Include="wwwroot\Data\img\81.jpg" />
+    <None Include="wwwroot\Data\img\82.jpg" />
+    <None Include="wwwroot\Data\img\83.jpg" />
+    <None Include="wwwroot\Data\img\84.jpg" />
+    <None Include="wwwroot\Data\img\85.jpg" />
+    <None Include="wwwroot\Data\img\86.jpg" />
+    <None Include="wwwroot\Data\img\87.jpg" />
+    <None Include="wwwroot\Data\img\88.jpg" />
+    <None Include="wwwroot\Data\img\89.jpg" />
+    <None Include="wwwroot\Data\img\9.jpg" />
+    <None Include="wwwroot\Data\img\90.jpg" />
+    <None Include="wwwroot\Data\img\91.jpg" />
+    <None Include="wwwroot\Data\img\92.jpg" />
+    <None Include="wwwroot\Data\img\93.jpg" />
+    <None Include="wwwroot\Data\img\94.jpg" />
+    <None Include="wwwroot\Data\img\95.jpg" />
+    <None Include="wwwroot\Data\img\96.jpg" />
+    <None Include="wwwroot\Data\img\97.jpg" />
+    <None Include="wwwroot\Data\img\98.jpg" />
+    <None Include="wwwroot\Data\img\99.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Rawlings-Catcher_s-Mask-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-RIMOWA-Topas-Multiwheel-45L-Black.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-RIMOWA-Topas-Multiwheel-45L-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Scarface-The-World-is-Yours-Hooded-Sweatshirt-Multicolor.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Scarface-The-World-Is-Yours-Lamp-Multicolor.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Shoulder-Bag-SS19-Black.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Shoulder-Bag-SS19-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-SIGG-Traveller-06L-Water-Bottle-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Simpson-Street-Bandit-Helmet-Black.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Simpson-Street-Bandit-Helmet-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Steiff-Bear-Heather-Grey.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Swarovski-Box-Logo-Hooded-Sweatshirt-Heather-Grey.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Swarovski-Box-Logo-Hooded-Sweatshirt-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Swarovski-Box-Logo-Tee-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Swarovski-Box-Logo-Tee-White.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-The-North-Face-Arc-Logo-Denali-Fleece-Jacket-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-The-North-Face-Arc-Logo-Mountain-Parka-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-The-North-Face-Mountain-Expedition-Backpack.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-The-North-Face-Mountain-Parka.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Toy-Uzi-Inflatable-Pillow-Green.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Victorinox-Classic-Alox-Knife-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Waist-Bag-SS19-Red.jpg" />
+    <None Include="wwwroot\Data\img\Supreme-Zojirushi-Stainless-Mug-Red.jpg" />
+    <None Include="wwwroot\Data\img\tuispx.jpg" />
+    <None Include="wwwroot\Data\img\unnamed.jpg" />
+    <None Include="wwwroot\Data\img\Untitled-1.jsx" />
+    <None Include="wwwroot\Data\img\vongspx.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.Client" Version="16.153.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="MySql.Data" Version="8.0.22" />
+    <PackageReference Include="PayPal" Version="1.9.1" />
+  </ItemGroup>
+
+</Project>

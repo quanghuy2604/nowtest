@@ -1,0 +1,43 @@
+﻿@model PeoductCRUD.Models.SP
+
+@{
+    ViewData["Title"] = "SinglePage";
+    ViewData["user"] = "Huy";
+    
+}
+<div class="container">
+<h1>Single Page</h1>
+
+<div>
+    <h4>SP @Model.id</h4>
+    <hr />
+
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="~/Data/img/@Html.DisplayFor(model => model.img)" width="500px" height="500px" />
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-10">
+                @Html.DisplayFor(model => model.brand)
+            </div>
+            <div class="col-sm-10" style="font-size:40px">
+                @Html.DisplayFor(model => model.ten)
+            </div>
+            <div class="col-sm-10" style="font-size:30px">
+                <strong>
+                    $ @Html.DisplayFor(model => model.gia)
+                </strong>
+            </div>
+            
+            <div class="col-sm-10" style="font-size:15px">
+                @Html.DisplayFor(model => model.mota)
+            </div>
+
+            <div class="col-sm-10" style="font-size:25px;text-align:end;align-items: flex-end;display: flex;height:300px;justify-content: space-between">
+                <a asp-controller="SP" asp-action="AddtoCart" asp-route-id="@Model.id" asp-route-sl="1"  asp-route-name="@ViewData["user"]" class="btn btn-outline-success" type="button">Add to cart</a>
+                <a asp-controller="SP" asp-action="Index" class="btn btn-outline-danger" type="button">Back to shopping</a>
+            </div>
+        </div>
+    </div>
+    
+</div>

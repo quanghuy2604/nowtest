@@ -1,0 +1,68 @@
+﻿@model IEnumerable<PeoductCRUD.Models.Products>
+
+@{
+    ViewData["Title"] = "Index";
+    var tong = 0.0;
+}
+<div class="container">
+<h1>Product list</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Total)
+                </td>
+                @{
+                    tong = tong + item.Total;
+                }
+                <td>
+                    <a asp-controller="Product" asp-action="Edit" asp-route-id="@item.ProductID" class="btn btn-primary">Edit</a>
+                    <a asp-controller="Product" asp-action="Delete" asp-route-id="@item.ProductID" class="btn btn-danger">Delete</a>
+
+                </td>
+            </tr>
+        }
+       
+    </tbody>
+   
+</table>
+<h2 style="text-align:right">$ @tong</h2>
+</div>

@@ -1,0 +1,62 @@
+﻿@model PeoductCRUD.Models.Account
+
+@{
+    ViewData["Title"] = "SignUp";
+}
+<div class="container">
+    <h1>SignUp</h1>
+
+    <h4>Account</h4>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="SignUp">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="user" class="control-label"></label>
+                    <input asp-for="user" class="form-control" />
+                    <span asp-validation-for="user" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="pass" class="control-label"></label>
+                    <input asp-for="pass" class="form-control" />
+                    <span asp-validation-for="pass" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="re_pass" class="control-label"></label>
+                    <input asp-for="re_pass" class="form-control" />
+                    <span asp-validation-for="re_pass" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Ten" class="control-label"></label>
+                    <input asp-for="Ten" class="form-control" />
+                    <span asp-validation-for="Ten" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="dia_chi" class="control-label"></label>
+                    <input asp-for="dia_chi" class="form-control" />
+                    <span asp-validation-for="dia_chi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="sdt" class="control-label"></label>
+                    <input asp-for="sdt" class="form-control" />
+                    <span asp-validation-for="sdt" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+

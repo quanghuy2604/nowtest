@@ -1,0 +1,58 @@
+﻿@model IEnumerable<PeoductCRUD.Models.SP>
+@using Microsoft.AspNetCore.Http
+@{
+    ViewData["Title"] = "Index";
+    var name = @Context.Session.GetString("KhachHang");
+}
+
+
+<div class="container" style="background-image">
+    <div class="grid-container">
+
+        @foreach (var item in Model)
+        {
+            <div class="grid-item">
+                <tr>
+                    <button>
+                        <img src="~/Data/img/@Html.DisplayFor(modelItem => item.img)" width="180" height="200">
+                    </button>
+                </tr>
+                <tr>
+                    <h3> @Html.DisplayFor(modelItem => item.brand)</h3>
+                </tr>
+                <tr>
+                    <h7>
+                        @Html.DisplayFor(modelItem => item.ten)
+                    </h7>
+                </tr>
+                <br>
+                <tr>
+                    <strong>
+                        $ @Html.DisplayFor(modelItem => item.gia)
+                    </strong>
+                </tr>
+                <br>
+                <a asp-controller="SP" asp-action="AddtoCart" asp-route-id="@item.id" asp-route-sl="1" asp-route-name=@name class="btn btn-outline-success" type="button">Add to cart</a>
+                <a asp-controller="SP" asp-action="SinglePage" asp-route-id="@item.id" class="btn btn-outline-primary" type="button">More info</a>
+
+
+            </div>
+        }
+    </div>
+</div>
+<style>
+    .grid-container {
+        display: grid;
+        grid-gap: 20px 20px;
+        grid-template-columns: auto auto auto auto;
+        padding: 5px;
+        background-color: #ffb3b3;
+    }
+
+    .grid-item {
+        background-color: #ff9999;
+        padding: 5px;
+        text-align: center;
+        width: 250px;
+    }
+</style>
